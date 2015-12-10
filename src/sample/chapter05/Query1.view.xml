@@ -6,9 +6,11 @@
   <View>
     <DataSet id="dsProducts">
       <Property name="dataType">[Product]</Property>
-      <Property name="dataProvider">simpleCRUD#getAll</Property>
+      <Property name="dataProvider">simpleCRUD#query1</Property>
       <Property name="pageSize">20</Property>
+      <Property name="parameter">Chai</Property>
     </DataSet>
+    <TextEditor id="editorProductName"/>
     <ToolBar>
       <DataPilot>
         <Property name="dataSet">dsProducts</Property>
@@ -17,6 +19,18 @@
       <ToolBarButton>
         <Property name="caption">保存</Property>
         <Property name="action">actionUpdate</Property>
+      </ToolBarButton>
+      <ToolBarButton id="btnQuery">
+        <ClientEvent name="onClick">var dsProducts = view.id(&quot;dsProducts&quot;); &#xD;
+var editorProductName = view.id(&quot;editorProductName&quot;);&#xD;
+&#xD;
+var productName = editorProductName.get(&quot;value&quot;);&#xD;
+//alert(productName);&#xD;
+&#xD;
+dsProducts.set(&quot;parameter&quot;,productName);&#xD;
+dsProducts.flushAsync();&#xD;
+</ClientEvent>
+        <Property name="caption">查询</Property>
       </ToolBarButton>
     </ToolBar>
     <DataGrid>
