@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import com.bstek.dorado.annotation.DataProvider;
 import com.bstek.dorado.annotation.DataResolver;
@@ -56,15 +57,15 @@ public class SimpleCRUD {
 	//多个参数查询
 	@DataProvider
 	public void query2(Page<Product> page,Map<String, Object> params){
-		if(null != params){
+		if(!CollectionUtils.isEmpty(params)){
 			String productName = (String) params.get("productName");
 			String unitsInStock = (String) params.get("unitsInStock");
 			
 			String whereCase = "";
-			if(null != productName){
+			if(!StringUtils.isEmpty(productName)){
 				whereCase += " productName like '%"+productName+"%'";
 			}
-			if(null != unitsInStock){
+			if(!StringUtils.isEmpty(unitsInStock)){
 				if(StringUtils.isNotEmpty(whereCase)){
 					whereCase += " and";
 				}
