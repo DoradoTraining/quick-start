@@ -4,6 +4,10 @@
   <Context/>
   <Model/>
   <View>
+    <AutoForm>
+      <Property name="autoCreateElements">true</Property>
+      <Property name="dataSet">dsProducts</Property>
+    </AutoForm>
     <DataSet id="dsProducts">
       <Property name="dataType">[Product]</Property>
       <Property name="dataProvider">simpleCRUD#getAll</Property>
