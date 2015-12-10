@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <AjaxAction id="ajaxAction1">
+      <ClientEvent name="onSuccess">dorado.MessageBox.alert(self.get(&quot;returnValue&quot;));&#xD;
+</ClientEvent>
+      <Property name="service">simpleAjax#toUpperCase</Property>
+      <Property name="parameter">Hello World</Property>
+    </AjaxAction>
+    <Button>
+      <Property name="action">ajaxAction1</Property>
+      <Property name="caption">toUpperCase</Property>
+    </Button>
+    <TextEditor id="textEditor1"/>
+    <AjaxAction id="ajaxAction2">
+      <Property name="service">simpleAjax#toUpperCase</Property>
+    </AjaxAction>
+    <Button id="btnUpperCase">
+      <ClientEvent name="onClick">//获取用户在editor中的输入值&#xD;
+var value = view.get(&quot;#textEditor1.value&quot;); &#xD;
+//把输入的值作为参数传递给ajaxAction2并触发Ajax2的执行&#xD;
+//当ajax2执行成功后会触发回调函数方法，在这里就是function(result){..}&#xD;
+//执行结果作为参数传递给方法。这里的执行结果为result对象&#xD;
+if(value){&#xD;
+	view.get(&quot;#ajaxAction2&quot;).set(&quot;parameter&quot;,value).execute(function(result){&#xD;
+		dorado.MessageBox.alert(result);&#xD;
+	});&#xD;
+}else{&#xD;
+	dorado.MessageBox.alert(&quot;请输入。。。。。&quot;);&#xD;
+}</ClientEvent>
+      <Property name="caption">to upper case</Property>
+    </Button>
+  </View>
+</ViewConfig>

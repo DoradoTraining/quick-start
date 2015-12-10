@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <Property name="title">Dorado7.0 快速入门</Property>
+    <ToolBar>
+      <ToolBarLabel>
+        <Property name="style">
+          <Property name="padding-left">5</Property>
+        </Property>
+        <Property name="text">Dorado7 快速入门</Property>
+      </ToolBarLabel>
+      <Fill/>
+      <ToolBarButton>
+        <Property name="menu">menu1</Property>
+        <Property name="icon"> url(>skin>common/icons.gif) -100px -20px</Property>
+      </ToolBarButton>
+    </ToolBar>
+    <SplitPanel>
+      <Property name="position">200</Property>
+      <MainControl>
+        <TabControl id="tabControl"/>
+      </MainControl>
+      <SideControl>
+        <Tree>
+          <ClientEvent name="onDataRowClick">var tab = {};&#xD;
+with(self.get(&quot;currentNode&quot;)){&#xD;
+	//制定当前的tab为IFrameTab&#xD;
+	tab.$type = &quot;IFrame&quot;;&#xD;
+	//定义新Tab的标签&#xD;
+	tab.caption = get(&quot;label&quot;);&#xD;
+	&#xD;
+	//定义Tab的Path&#xD;
+	//get(&quot;userData&quot;)标识获取当前节点的UserData属性&#xD;
+	//也就是刚才设定的sample.chapter01.HelloWorld.d&#xD;
+	tab.path = get(&quot;userData&quot;);&#xD;
+	tab.name = get(&quot;label&quot;)&#xD;
+	tab.closeable = true;&#xD;
+}&#xD;
+// 如果当前节点有指定的Path则打开新的tab&#xD;
+if(tab.path){&#xD;
+	with(view.get(&quot;#tabControl&quot;)){&#xD;
+		//根据name查找是否已经打开过当前的tab&#xD;
+		//如果没有打开过，则需要添加一个新的tab&#xD;
+		var currentTab = getTab(tab.name);&#xD;
+		if(currentTab){&#xD;
+			tab = currentTab;&#xD;
+		}else{&#xD;
+			// 获取ID为tabControl的对象，并添加一个新的Tab&#xD;
+			// 设定ID为tabControl的对象的当前Tab为新创建的Tab&#xD;
+			tab = addTab(tab);&#xD;
+		}&#xD;
+		//设定当前的Tab为指定的tab&#xD;
+		set(&quot;currentTab&quot;,tab);&#xD;
+	}&#xD;
+}&#xD;
+</ClientEvent>
+          <Node>
+            <Property name="label">chapter01</Property>
+            <Property name="icon"> url(>skin>common/icons.gif) -160px -80px</Property>
+            <Node>
+              <Property name="label">HelloWorld</Property>
+              <Property name="userData">sample.chapter01.HelloWorld.d</Property>
+            </Node>
+          </Node>
+          <Node>
+            <Property name="label">chapter02</Property>
+            <Property name="icon"> url(>skin>common/icons.gif) -160px -80px</Property>
+          </Node>
+          <Node>
+            <Property name="label">chapter03</Property>
+            <Property name="icon"> url(>skin>common/icons.gif) -160px -80px</Property>
+          </Node>
+          <Node>
+            <Property name="label">chapter04</Property>
+            <Property name="icon"> url(>skin>common/icons.gif) -160px -80px</Property>
+          </Node>
+        </Tree>
+      </SideControl>
+    </SplitPanel>
+    <Menu id="menu1">
+      <MenuItem>
+        <ClientEvent name="onClick">dorado.MessageBox.alert(&quot;Dorado7.0 快速入门&quot;);</ClientEvent>
+        <Property name="caption">Help</Property>
+      </MenuItem>
+      <MenuItem>
+        <Property name="caption">About</Property>
+      </MenuItem>
+    </Menu>
+  </View>
+</ViewConfig>

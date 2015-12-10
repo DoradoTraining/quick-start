@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <Menu id="menu1">
+      <MenuItem>
+        <Property name="caption">书签</Property>
+        <MenuItem>
+          <Property name="caption">百度</Property>
+        </MenuItem>
+        <MenuItem>
+          <Property name="caption">新浪</Property>
+        </MenuItem>
+        <MenuItem>
+          <Property name="caption">谷歌</Property>
+        </MenuItem>
+      </MenuItem>
+      <MenuItem>
+        <Property name="caption">新建窗口</Property>
+      </MenuItem>
+      <MenuItem>
+        <Property name="caption">新建标签</Property>
+      </MenuItem>
+      <MenuItem>
+        <Property name="caption">工具</Property>
+      </MenuItem>
+    </Menu>
+    <Button>
+      <Property name="caption">操作</Property>
+      <Property name="menu">menu1</Property>
+    </Button>
+    <ToolBar>
+      <Fill/>
+      <ToolBarButton>
+        <Property name="action">操作</Property>
+        <Property name="menu">menu1</Property>
+      </ToolBarButton>
+    </ToolBar>
+    <Tree>
+      <ClientEvent name="onContextMenu">view.get(&quot;#menu1&quot;).show({&#xD;
+position:{&#xD;
+left:arg.event.pageX,&#xD;
+top:arg.event.pageY&#xD;
+}&#xD;
+});</ClientEvent>
+      <Node>
+        <Property name="label">node1</Property>
+      </Node>
+      <Node>
+        <Property name="label">node2</Property>
+      </Node>
+      <Node>
+        <Property name="label">node3</Property>
+      </Node>
+    </Tree>
+    <Panel>
+      <ClientEvent name="onContextMenu">view.get(&quot;#menu1&quot;).show({&#xD;
+position : {&#xD;
+left : arg.event.pageX,&#xD;
+top : arg.event.pageY&#xD;
+}&#xD;
+});</ClientEvent>
+      <Property name="caption">panel</Property>
+      <Buttons/>
+      <Children/>
+      <Tools/>
+    </Panel>
+  </View>
+</ViewConfig>
