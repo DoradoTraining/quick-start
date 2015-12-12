@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <TextEditor>
+      <Property name="trigger">listDropDown1</Property>
+    </TextEditor>
+    <ListDropDown id="listDropDown1">
+      <Property name="items">1,2,3,4,5</Property>
+    </ListDropDown>
+    <ListDropDown id="listDropDown2">
+      <Property name="items">
+        <Collection>
+          <Entity>
+            <Property name="key">1</Property>
+            <Property name="label">A</Property>
+          </Entity>
+          <Entity>
+            <Property name="key">2</Property>
+            <Property name="label">B</Property>
+          </Entity>
+          <Entity>
+            <Property name="key">3</Property>
+            <Property name="label">C</Property>
+          </Entity>
+          <Entity>
+            <Property name="key">4</Property>
+            <Property name="label">D</Property>
+          </Entity>
+          <Entity>
+            <Property name="key">5</Property>
+            <Property name="label">E</Property>
+          </Entity>
+        </Collection>
+      </Property>
+      <Property name="displayProperty">label</Property>
+      <Property name="property">key</Property>
+    </ListDropDown>
+    <TextEditor>
+      <Property name="trigger">listDropDown2</Property>
+    </TextEditor>
+  </View>
+</ViewConfig>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <TextEditor id="textEditor1">
+      <ClientEvent name="onReady">self.set(&quot;value&quot;, 1);</ClientEvent>
+      <Property name="mapping">
+        <Property name="mapValues">
+          <Collection>
+            <Entity>
+              <Property name="1">男</Property>
+            </Entity>
+            <Entity>
+              <Property name="0">女</Property>
+            </Entity>
+          </Collection>
+        </Property>
+        <Property name="keyProperty">name</Property>
+        <Property name="valueProperty">value</Property>
+      </Property>
+    </TextEditor>
+  </View>
+</ViewConfig>

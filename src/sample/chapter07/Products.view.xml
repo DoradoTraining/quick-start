@@ -12,13 +12,13 @@
         <Property name="dataType">Long</Property>
       </PropertyDef>
       <PropertyDef name="productName">
-        <Property/>
+        <Property></Property>
         <Property name="dataType">String</Property>
         <Property name="required">true</Property>
         <Property name="label">产品名称</Property>
       </PropertyDef>
       <PropertyDef name="quantityPerUnit">
-        <Property/>
+        <Property></Property>
       </PropertyDef>
       <PropertyDef name="unitPrice">
         <Property name="dataType">float</Property>
@@ -122,7 +122,7 @@ if(entity){&#xD;
       <Property name="dataSet">dsProducts</Property>
     </DataGrid>
     <UpdateAction id="actionUpdate">
-      <Property name="dataResolver">simpleCRUD#saveAll</Property>
+      <Property name="dataResolver">productInterceptor#saveAll</Property>
       <Property name="executingMessage">正在保存。。。。。。</Property>
       <Property name="successMessage">保存成功</Property>
       <UpdateItem>
