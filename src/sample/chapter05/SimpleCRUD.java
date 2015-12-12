@@ -17,6 +17,7 @@ import com.bstek.dorado.data.provider.Page;
 import com.bstek.dorado.sample.dao.ProductDao;
 import com.bstek.dorado.sample.entity.Product;
 
+
 @Component
 public class SimpleCRUD {
 	private static Logger logger = LoggerFactory.getLogger(SimpleCRUD.class);
