@@ -944,7 +944,7 @@
 <Prop name="ui" defaultValue="default"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" type="java.lang.Boolean"/>
-<Prop name="width"/></Props><Children><Child rule="IFrameTab" name="IFrameTab" aggregated="true"></Child><Child rule="ControlTab" name="ControlTab" aggregated="true"></Child></Children></Rule><Rule name="VerticalTabControl" parents="TabColumn" label="VerticalTabControl" type="com.bstek.dorado.view.widget.base.tab.VerticalTabControl" scope="public" sortFactor="2019" category="General" icon="/com/bstek/dorado/view/widget/base/tab/VerticalTabControl.png" clientTypes="desktop"><PrimitiveProps>
+<Prop name="width"/></Props><Children><Child rule="ControlTab" name="ControlTab" aggregated="true"></Child><Child rule="IFrameTab" name="IFrameTab" aggregated="true"></Child></Children></Rule><Rule name="VerticalTabControl" parents="TabColumn" label="VerticalTabControl" type="com.bstek.dorado.view.widget.base.tab.VerticalTabControl" scope="public" sortFactor="2019" category="General" icon="/com/bstek/dorado/view/widget/base/tab/VerticalTabControl.png" clientTypes="desktop"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="alwaysShowNavButtons" type="boolean"/>
 <Prop name="className"/>
@@ -968,7 +968,7 @@
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="verticalText" type="boolean"/>
 <Prop name="visible" type="java.lang.Boolean"/>
-<Prop name="width"/></Props><Children><Child rule="IFrameTab" name="IFrameTab" aggregated="true"></Child><Child rule="ControlTab" name="ControlTab" aggregated="true"></Child></Children></Rule><Rule name="TabBar" parents="AbstractTabControl" label="TabBar" type="com.bstek.dorado.view.widget.base.tab.TabBar" scope="public" sortFactor="2020" category="General" icon="/com/bstek/dorado/view/widget/base/tab/TabBar.png" clientTypes="desktop"><PrimitiveProps>
+<Prop name="width"/></Props><Children><Child rule="ControlTab" name="ControlTab" aggregated="true"></Child><Child rule="IFrameTab" name="IFrameTab" aggregated="true"></Child></Children></Rule><Rule name="TabBar" parents="AbstractTabControl" label="TabBar" type="com.bstek.dorado.view.widget.base.tab.TabBar" scope="public" sortFactor="2020" category="General" icon="/com/bstek/dorado/view/widget/base/tab/TabBar.png" clientTypes="desktop"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="alwaysShowNavButtons" type="boolean"/>
 <Prop name="className"/>
@@ -1036,7 +1036,7 @@
 <Prop name="ui" defaultValue="default"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" type="java.lang.Boolean"/>
-<Prop name="width"/></Props><Children><Child rule="Fill" name="Fill" aggregated="true"></Child><Child rule="Button_1" name="ToolBarButton" aggregated="true"></Child><Child rule="Separator" name="Separator" aggregated="true"></Child><Child rule="MenuButton" name="MenuButton" aggregated="true"></Child><Child rule="Label_1" name="ToolBarLabel" aggregated="true"></Child><Child rule="Control_1" name="Items" aggregated="true"></Child></Children></Rule><Rule name="SplitPanel" parents="Control_1" label="SplitPanel" type="com.bstek.dorado.view.widget.base.SplitPanel" scope="public" sortFactor="2023" category="General" icon="/com/bstek/dorado/view/widget/base/SplitPanel.png" clientTypes="desktop"><PrimitiveProps>
+<Prop name="width"/></Props><Children><Child rule="Separator" name="Separator" aggregated="true"></Child><Child rule="Fill" name="Fill" aggregated="true"></Child><Child rule="Label_1" name="ToolBarLabel" aggregated="true"></Child><Child rule="Button_1" name="ToolBarButton" aggregated="true"></Child><Child rule="MenuButton" name="MenuButton" aggregated="true"></Child><Child rule="Control_1" name="Items" aggregated="true"></Child></Children></Rule><Rule name="SplitPanel" parents="Control_1" label="SplitPanel" type="com.bstek.dorado.view.widget.base.SplitPanel" scope="public" sortFactor="2023" category="General" icon="/com/bstek/dorado/view/widget/base/SplitPanel.png" clientTypes="desktop"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="className"/>
 <Prop name="collapseable" defaultValue="true" type="boolean"/>
@@ -2646,7 +2646,7 @@
 <Prop name="ui" highlight="1" enumValues="default,default-bottom,optional1,optional2,optional3"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" type="java.lang.Boolean"/>
-<Prop name="width"/></Props><Children><Child rule="Spacer" name="TouchToolBarSpacer" aggregated="true"></Child><Child rule="Separator_2" name="TouchToolBarSeparator" aggregated="true"></Child><Child rule="Control_1" name="Items" aggregated="true"></Child></Children></Rule><Rule name="TouchTabControl" parents="Control_1" label="TabControl" nodeName="TouchTabControl" type="com.bstek.dorado.touch.widget.tab.TabControl" scope="public" sortFactor="2073" category="General" icon="/com/bstek/dorado/touch/widget/tab/TabControl.png" clientTypes="touch"><PrimitiveProps>
+<Prop name="width"/></Props><Children><Child rule="Separator_2" name="TouchToolBarSeparator" aggregated="true"></Child><Child rule="Spacer" name="TouchToolBarSpacer" aggregated="true"></Child><Child rule="Control_1" name="Items" aggregated="true"></Child></Children></Rule><Rule name="TouchTabControl" parents="Control_1" label="TabControl" nodeName="TouchTabControl" type="com.bstek.dorado.touch.widget.tab.TabControl" scope="public" sortFactor="2073" category="General" icon="/com/bstek/dorado/touch/widget/tab/TabControl.png" clientTypes="touch"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="className"/>
 <Prop name="currentTab" type="int"/>
@@ -3619,7 +3619,7 @@
 <Prop name="visible" type="java.lang.Boolean"/>
 <Prop name="width"/></Props><ClientEvents>
 <ClientEvent name="onCollapsedChange" parameters="self,arg"/>
-<ClientEvent name="beforeCollapsedChange" parameters="self,arg"/></ClientEvents><Children><Child name="Buttons" fixed="true"><Rule name="Wrapper.Buttons" label="Buttons" nodeName="Buttons" scope="public" icon="/com/bstek/dorado/view/widget/base/Buttons.png"><Children><Child rule="Button" name="Buttons" aggregated="true"></Child></Children></Rule></Child><Child name="Children" fixed="true"><Rule name="Wrapper.Children" label="Children" nodeName="Children" scope="public" icon="/com/bstek/dorado/view/widget/base/Children.png"><Children><Child rule="Component" name="Children" aggregated="true"></Child></Children></Rule></Child></Children></Rule><Rule name="IFrameTab" parents="Tab" label="IFrameTab" type="com.bstek.dorado.view.widget.base.tab.IFrameTab" scope="protected" icon="/com/bstek/dorado/view/widget/base/tab/IFrameTab.png"><Props>
+<ClientEvent name="beforeCollapsedChange" parameters="self,arg"/></ClientEvents><Children><Child name="Buttons" fixed="true"><Rule name="Wrapper.Buttons" label="Buttons" nodeName="Buttons" scope="public" icon="/com/bstek/dorado/view/widget/base/Buttons.png"><Children><Child rule="Button" name="Buttons" aggregated="true"></Child></Children></Rule></Child><Child name="Children" fixed="true"><Rule name="Wrapper.Children" label="Children" nodeName="Children" scope="public" icon="/com/bstek/dorado/view/widget/base/Children.png"><Children><Child rule="Component" name="Children" aggregated="true"></Child></Children></Rule></Child></Children></Rule><Rule name="ControlTab" parents="Tab" label="ControlTab" type="com.bstek.dorado.view.widget.base.tab.ControlTab" scope="protected" icon="/com/bstek/dorado/view/widget/base/tab/ControlTab.png"><Props>
 <Prop name="caption" highlight="1"/>
 <Prop name="className"/>
 <Prop name="closeable" type="boolean"/>
@@ -3628,13 +3628,12 @@
 <Prop name="height"/>
 <Prop name="icon"/>
 <Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="name"/>
-<Prop name="path" highlight="1"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="name"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
 <Prop name="tags"/>
 <Prop name="tip"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="Tab" label="Tab" type="com.bstek.dorado.view.widget.base.tab.Tab" scope="protected" icon="/com/bstek/dorado/view/widget/base/tab/Tab.png"><Props>
+<Prop name="width"/></Props><Children><Child rule="Control_1" name="Control"></Child></Children></Rule><Rule name="Tab" label="Tab" type="com.bstek.dorado.view.widget.base.tab.Tab" scope="protected" icon="/com/bstek/dorado/view/widget/base/tab/Tab.png"><Props>
 <Prop name="caption" highlight="1"/>
 <Prop name="className"/>
 <Prop name="closeable" type="boolean"/>
@@ -3650,7 +3649,7 @@
 <Prop name="visible" defaultValue="true" type="boolean"/>
 <Prop name="width"/></Props><ClientEvents>
 <ClientEvent name="beforeClose" parameters="self,arg"/>
-<ClientEvent name="onClose" parameters="self,arg"/></ClientEvents></Rule><Rule name="ControlTab" parents="Tab" label="ControlTab" type="com.bstek.dorado.view.widget.base.tab.ControlTab" scope="protected" icon="/com/bstek/dorado/view/widget/base/tab/ControlTab.png"><Props>
+<ClientEvent name="onClose" parameters="self,arg"/></ClientEvents></Rule><Rule name="IFrameTab" parents="Tab" label="IFrameTab" type="com.bstek.dorado.view.widget.base.tab.IFrameTab" scope="protected" icon="/com/bstek/dorado/view/widget/base/tab/IFrameTab.png"><Props>
 <Prop name="caption" highlight="1"/>
 <Prop name="className"/>
 <Prop name="closeable" type="boolean"/>
@@ -3659,12 +3658,13 @@
 <Prop name="height"/>
 <Prop name="icon"/>
 <Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="name"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="name"/>
+<Prop name="path" highlight="1"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
 <Prop name="tags"/>
 <Prop name="tip"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props><Children><Child rule="Control_1" name="Control"></Child></Children></Rule><Rule name="AbstractTabControl" parents="Control_1" abstract="true" type="com.bstek.dorado.view.widget.base.tab.AbstractTabControl" scope="protected"><PrimitiveProps>
+<Prop name="width"/></Props></Rule><Rule name="AbstractTabControl" parents="Control_1" abstract="true" type="com.bstek.dorado.view.widget.base.tab.AbstractTabControl" scope="protected"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="alwaysShowNavButtons" type="boolean"/>
 <Prop name="className"/>
@@ -3689,7 +3689,7 @@
 <ClientEvent name="onTabContextMenu" parameters="self,arg"/>
 <ClientEvent name="onTabRemove" parameters="self,arg"/>
 <ClientEvent name="beforeTabChange" parameters="self,arg"/>
-<ClientEvent name="onTabChange" parameters="self,arg"/></ClientEvents></Rule><Rule name="Fill" parents="Control_1" label="Fill" type="com.bstek.dorado.view.widget.base.toolbar.Fill" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Fill.png" clientTypes="desktop"><PrimitiveProps>
+<ClientEvent name="onTabChange" parameters="self,arg"/></ClientEvents></Rule><Rule name="Separator" parents="Control_1" label="Separator" type="com.bstek.dorado.view.widget.base.toolbar.Separator" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Separator.png" clientTypes="desktop"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="className"/>
 <Prop name="dragTags"/>
@@ -3706,6 +3706,48 @@
 <Prop name="tags"/>
 <Prop name="tip"/>
 <Prop name="ui" defaultValue="default"/>
+<Prop name="userData" editor="any" type="java.lang.Object"/>
+<Prop name="visible" type="java.lang.Boolean"/>
+<Prop name="width"/></Props></Rule><Rule name="Fill" parents="Control_1" label="Fill" type="com.bstek.dorado.view.widget.base.toolbar.Fill" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Fill.png" clientTypes="desktop"><PrimitiveProps>
+<Prop name="id" highlight="1"/></PrimitiveProps><Props>
+<Prop name="className"/>
+<Prop name="dragTags"/>
+<Prop name="draggable" type="boolean"/>
+<Prop name="droppable" type="boolean"/>
+<Prop name="droppableTags"/>
+<Prop name="exClassName"/>
+<Prop name="height"/>
+<Prop name="hideMode" defaultValue="visibility" enumValues="visibility,display"/>
+<Prop name="ignored" type="boolean"/>
+<Prop name="layoutConstraint" type="java.lang.Object"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="renderOn"/>
+<Prop name="renderTo"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="tags"/>
+<Prop name="tip"/>
+<Prop name="ui" defaultValue="default"/>
+<Prop name="userData" editor="any" type="java.lang.Object"/>
+<Prop name="visible" type="java.lang.Boolean"/>
+<Prop name="width"/></Props></Rule><Rule name="Label_1" parents="Label" label="Label" nodeName="ToolBarLabel" type="com.bstek.dorado.view.widget.base.toolbar.Label" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Label.png" clientTypes="desktop"><PrimitiveProps>
+<Prop name="id" highlight="1"/></PrimitiveProps><Props>
+<Prop name="className"/>
+<Prop name="dataPath" highlight="1"/>
+<Prop name="dataSet" highlight="1" reference="DataSet:id"/>
+<Prop name="dragTags"/>
+<Prop name="draggable" type="boolean"/>
+<Prop name="droppable" type="boolean"/>
+<Prop name="droppableTags"/>
+<Prop name="exClassName"/>
+<Prop name="height"/>
+<Prop name="hideMode" defaultValue="visibility" enumValues="visibility,display"/>
+<Prop name="ignored" type="boolean"/>
+<Prop name="layoutConstraint" type="java.lang.Object"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="property" highlight="1"/>
+<Prop name="renderOn"/>
+<Prop name="renderTo"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="tags"/>
+<Prop name="text" highlight="1"/>
+<Prop name="tip"/>
+<Prop name="ui" enumValues="default,bold,h1,h2,h3"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" type="java.lang.Boolean"/>
 <Prop name="width"/></Props></Rule><Rule name="Button_1" parents="Button" label="ToolBarButton" nodeName="ToolBarButton" type="com.bstek.dorado.view.widget.base.toolbar.Button" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Button.png" clientTypes="desktop"><PrimitiveProps>
@@ -3739,25 +3781,6 @@
 <Prop name="toggleable" type="boolean"/>
 <Prop name="toggled" type="boolean"/>
 <Prop name="triggerToggled" type="boolean"/>
-<Prop name="ui" defaultValue="default"/>
-<Prop name="userData" editor="any" type="java.lang.Object"/>
-<Prop name="visible" type="java.lang.Boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="Separator" parents="Control_1" label="Separator" type="com.bstek.dorado.view.widget.base.toolbar.Separator" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Separator.png" clientTypes="desktop"><PrimitiveProps>
-<Prop name="id" highlight="1"/></PrimitiveProps><Props>
-<Prop name="className"/>
-<Prop name="dragTags"/>
-<Prop name="draggable" type="boolean"/>
-<Prop name="droppable" type="boolean"/>
-<Prop name="droppableTags"/>
-<Prop name="exClassName"/>
-<Prop name="height"/>
-<Prop name="hideMode" defaultValue="visibility" enumValues="visibility,display"/>
-<Prop name="ignored" type="boolean"/>
-<Prop name="layoutConstraint" type="java.lang.Object"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="renderOn"/>
-<Prop name="renderTo"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="tags"/>
-<Prop name="tip"/>
 <Prop name="ui" defaultValue="default"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" type="java.lang.Boolean"/>
@@ -3805,7 +3828,26 @@
 <Prop name="tip"/>
 <Prop name="userData" type="java.lang.Object"/>
 <Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="TextMenuItem" parents="BaseMenuItem" abstract="true" type="com.bstek.dorado.view.widget.base.menu.TextMenuItem" scope="public"><Props>
+<Prop name="width"/></Props></Rule><Rule name="CheckableMenuItem" parents="MenuItem" label="CheckableMenuItem" type="com.bstek.dorado.view.widget.base.menu.CheckableMenuItem" scope="public" icon="/com/bstek/dorado/view/widget/base/menu/CheckableMenuItem.png" clientTypes="desktop"><Props>
+<Prop name="action" reference="Action:id"/>
+<Prop name="caption"/>
+<Prop name="checked" type="boolean"/>
+<Prop name="className"/>
+<Prop name="disabled" type="boolean"/>
+<Prop name="exClassName"/>
+<Prop name="group"/>
+<Prop name="height"/>
+<Prop name="hideOnClick" defaultValue="true" type="boolean"/>
+<Prop name="icon"/>
+<Prop name="iconClass"/>
+<Prop name="ignored" type="boolean"/>
+<Prop name="name"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="tags"/>
+<Prop name="tip"/>
+<Prop name="userData" type="java.lang.Object"/>
+<Prop name="visible" defaultValue="true" type="boolean"/>
+<Prop name="width"/></Props><ClientEvents>
+<ClientEvent name="onCheckedChange" parameters="self,arg"/></ClientEvents></Rule><Rule name="TextMenuItem" parents="BaseMenuItem" abstract="true" type="com.bstek.dorado.view.widget.base.menu.TextMenuItem" scope="public"><Props>
 <Prop name="action" reference="Action:id"/>
 <Prop name="caption"/>
 <Prop name="className"/>
@@ -3838,36 +3880,7 @@
 <Prop name="tip"/>
 <Prop name="userData" type="java.lang.Object"/>
 <Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props><Children><Child rule="BaseMenuItem" name="Items" aggregated="true"></Child></Children></Rule><Rule name="Separator_1" parents="BaseMenuItem" label="Separator" type="com.bstek.dorado.view.widget.base.menu.Separator" scope="public" icon="/com/bstek/dorado/view/widget/base/menu/Separator.png" clientTypes="desktop,touch"><Props>
-<Prop name="className"/>
-<Prop name="exClassName"/>
-<Prop name="height"/>
-<Prop name="ignored" type="boolean"/>
-<Prop name="name"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="tags"/>
-<Prop name="tip"/>
-<Prop name="userData" type="java.lang.Object"/>
-<Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="CheckableMenuItem" parents="MenuItem" label="CheckableMenuItem" type="com.bstek.dorado.view.widget.base.menu.CheckableMenuItem" scope="public" icon="/com/bstek/dorado/view/widget/base/menu/CheckableMenuItem.png" clientTypes="desktop"><Props>
-<Prop name="action" reference="Action:id"/>
-<Prop name="caption"/>
-<Prop name="checked" type="boolean"/>
-<Prop name="className"/>
-<Prop name="disabled" type="boolean"/>
-<Prop name="exClassName"/>
-<Prop name="group"/>
-<Prop name="height"/>
-<Prop name="hideOnClick" defaultValue="true" type="boolean"/>
-<Prop name="icon"/>
-<Prop name="iconClass"/>
-<Prop name="ignored" type="boolean"/>
-<Prop name="name"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="tags"/>
-<Prop name="tip"/>
-<Prop name="userData" type="java.lang.Object"/>
-<Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props><ClientEvents>
-<ClientEvent name="onCheckedChange" parameters="self,arg"/></ClientEvents></Rule><Rule name="ControlMenuItem" parents="TextMenuItem" label="ControlMenuItem" type="com.bstek.dorado.view.widget.base.menu.ControlMenuItem" scope="public" icon="/com/bstek/dorado/view/widget/base/menu/ControlMenuItem.png" clientTypes="desktop"><Props>
+<Prop name="width"/></Props><Children><Child rule="BaseMenuItem" name="Items" aggregated="true"></Child></Children></Rule><Rule name="ControlMenuItem" parents="TextMenuItem" label="ControlMenuItem" type="com.bstek.dorado.view.widget.base.menu.ControlMenuItem" scope="public" icon="/com/bstek/dorado/view/widget/base/menu/ControlMenuItem.png" clientTypes="desktop"><Props>
 <Prop name="action" reference="Action:id"/>
 <Prop name="caption"/>
 <Prop name="className"/>
@@ -3904,29 +3917,16 @@
 <Prop name="shadowMode" enumValues="drop,sides,frame,none"/>
 <Prop name="showAnimateType" enumValues="zoom,mordernZoom,flip,slide,safeSlide,fade,none"/>
 <Prop name="top" type="int"/>
-<Prop name="vAlign" enumValues="top,innertop,center,innerbottom,bottom" visible="false"/></Props></Rule><Rule name="Label_1" parents="Label" label="Label" nodeName="ToolBarLabel" type="com.bstek.dorado.view.widget.base.toolbar.Label" scope="protected" category="ToolBar" icon="/com/bstek/dorado/view/widget/base/toolbar/Label.png" clientTypes="desktop"><PrimitiveProps>
-<Prop name="id" highlight="1"/></PrimitiveProps><Props>
+<Prop name="vAlign" enumValues="top,innertop,center,innerbottom,bottom" visible="false"/></Props></Rule><Rule name="Separator_1" parents="BaseMenuItem" label="Separator" type="com.bstek.dorado.view.widget.base.menu.Separator" scope="public" icon="/com/bstek/dorado/view/widget/base/menu/Separator.png" clientTypes="desktop,touch"><Props>
 <Prop name="className"/>
-<Prop name="dataPath" highlight="1"/>
-<Prop name="dataSet" highlight="1" reference="DataSet:id"/>
-<Prop name="dragTags"/>
-<Prop name="draggable" type="boolean"/>
-<Prop name="droppable" type="boolean"/>
-<Prop name="droppableTags"/>
 <Prop name="exClassName"/>
 <Prop name="height"/>
-<Prop name="hideMode" defaultValue="visibility" enumValues="visibility,display"/>
 <Prop name="ignored" type="boolean"/>
-<Prop name="layoutConstraint" type="java.lang.Object"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="property" highlight="1"/>
-<Prop name="renderOn"/>
-<Prop name="renderTo"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="name"/><Prop name="style" type="java.util.Map" compositeType="Open"></Prop>
 <Prop name="tags"/>
-<Prop name="text" highlight="1"/>
 <Prop name="tip"/>
-<Prop name="ui" enumValues="default,bold,h1,h2,h3"/>
-<Prop name="userData" editor="any" type="java.lang.Object"/>
-<Prop name="visible" type="java.lang.Boolean"/>
+<Prop name="userData" type="java.lang.Object"/>
+<Prop name="visible" defaultValue="true" type="boolean"/>
 <Prop name="width"/></Props></Rule><Rule name="Section" label="Section" type="com.bstek.dorado.view.widget.base.accordion.Section" scope="public" icon="/com/bstek/dorado/view/widget/base/accordion/Section.png"><Props>
 <Prop name="caption"/>
 <Prop name="className"/>
@@ -4188,7 +4188,22 @@
 <Prop name="visible" defaultValue="true" type="boolean"/></Props><ClientEvents>
 <ClientEvent name="onRenderHeaderCell" parameters="self,arg"/>
 <ClientEvent name="onHeaderClick" parameters="self,arg"/>
-<ClientEvent name="onGetCellEditor" parameters="self,arg"/></ClientEvents></Rule><Rule name="AbstractDataColumn" parents="Column" abstract="true" type="com.bstek.dorado.view.widget.grid.AbstractDataColumn" scope="public"><Props>
+<ClientEvent name="onGetCellEditor" parameters="self,arg"/></ClientEvents></Rule><Rule name="RowSelectorColumn" parents="AbstractDataColumn" label="RowSelectorColumn" type="com.bstek.dorado.view.widget.grid.RowSelectorColumn" scope="public" icon="/com/bstek/dorado/view/widget/grid/RowSelectorColumn.png"><Props>
+<Prop name="align" enumValues="left,center,right"/>
+<Prop name="caption"/>
+<Prop name="filterBarRenderer"/>
+<Prop name="footerRenderer"/>
+<Prop name="headerAlign" defaultValue="center" enumValues="left,center,right"/>
+<Prop name="headerRenderer"/>
+<Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="name"/>
+<Prop name="renderer"/>
+<Prop name="resizeable" defaultValue="true" type="boolean"/>
+<Prop name="supportsOptionMenu" defaultValue="true" type="boolean"/>
+<Prop name="tags"/>
+<Prop name="userData" editor="any" type="java.lang.Object"/>
+<Prop name="visible" defaultValue="true" type="boolean"/>
+<Prop name="width"/></Props></Rule><Rule name="AbstractDataColumn" parents="Column" abstract="true" type="com.bstek.dorado.view.widget.grid.AbstractDataColumn" scope="public"><Props>
 <Prop name="align" enumValues="left,center,right"/>
 <Prop name="caption"/>
 <Prop name="filterBarRenderer"/>
@@ -4205,7 +4220,32 @@
 <Prop name="visible" defaultValue="true" type="boolean"/>
 <Prop name="width"/></Props><ClientEvents>
 <ClientEvent name="onRenderFooterCell" parameters="self,arg"/>
-<ClientEvent name="onRenderCell" parameters="self,arg"/></ClientEvents></Rule><Rule name="DataColumn" parents="AbstractDataColumn" label="DataColumn" type="com.bstek.dorado.view.widget.grid.DataColumn" scope="public" icon="/com/bstek/dorado/view/widget/grid/DataColumn.png" labelProperty="name,property"><Props>
+<ClientEvent name="onRenderCell" parameters="self,arg"/></ClientEvents></Rule><Rule name="ColumnGroup" parents="Column" label="ColumnGroup" type="com.bstek.dorado.view.widget.grid.ColumnGroup" scope="public" icon="/com/bstek/dorado/view/widget/grid/ColumnGroup.png"><Props>
+<Prop name="align" enumValues="left,center,right"/>
+<Prop name="caption"/>
+<Prop name="headerAlign" defaultValue="center" enumValues="left,center,right"/>
+<Prop name="headerRenderer"/>
+<Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="name"/>
+<Prop name="supportsOptionMenu" defaultValue="true" type="boolean"/>
+<Prop name="tags"/>
+<Prop name="userData" editor="any" type="java.lang.Object"/>
+<Prop name="visible" defaultValue="true" type="boolean"/></Props><Children><Child rule="Column" name="Columns" aggregated="true"></Child></Children></Rule><Rule name="IndicatorColumn" parents="AbstractDataColumn" label="IndicatorColumn" type="com.bstek.dorado.view.widget.grid.IndicatorColumn" scope="public" icon="/com/bstek/dorado/view/widget/grid/IndicatorColumn.png"><Props>
+<Prop name="align" enumValues="left,center,right"/>
+<Prop name="caption"/>
+<Prop name="filterBarRenderer"/>
+<Prop name="footerRenderer"/>
+<Prop name="headerAlign" defaultValue="center" enumValues="left,center,right"/>
+<Prop name="headerRenderer"/>
+<Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
+<Prop name="name"/>
+<Prop name="renderer"/>
+<Prop name="resizeable" defaultValue="true" type="boolean"/>
+<Prop name="supportsOptionMenu" defaultValue="true" type="boolean"/>
+<Prop name="tags"/>
+<Prop name="userData" editor="any" type="java.lang.Object"/>
+<Prop name="visible" defaultValue="true" type="boolean"/>
+<Prop name="width"/></Props></Rule><Rule name="DataColumn" parents="AbstractDataColumn" label="DataColumn" type="com.bstek.dorado.view.widget.grid.DataColumn" scope="public" icon="/com/bstek/dorado/view/widget/grid/DataColumn.png" labelProperty="name,property"><Props>
 <Prop name="align" enumValues="left,center,right"/>
 <Prop name="caption"/>
 <Prop name="dataType" type="com.bstek.dorado.data.type.DataType"/>
@@ -4249,47 +4289,7 @@
 <Prop name="tags"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="IndicatorColumn" parents="AbstractDataColumn" label="IndicatorColumn" type="com.bstek.dorado.view.widget.grid.IndicatorColumn" scope="public" icon="/com/bstek/dorado/view/widget/grid/IndicatorColumn.png"><Props>
-<Prop name="align" enumValues="left,center,right"/>
-<Prop name="caption"/>
-<Prop name="filterBarRenderer"/>
-<Prop name="footerRenderer"/>
-<Prop name="headerAlign" defaultValue="center" enumValues="left,center,right"/>
-<Prop name="headerRenderer"/>
-<Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="name"/>
-<Prop name="renderer"/>
-<Prop name="resizeable" defaultValue="true" type="boolean"/>
-<Prop name="supportsOptionMenu" defaultValue="true" type="boolean"/>
-<Prop name="tags"/>
-<Prop name="userData" editor="any" type="java.lang.Object"/>
-<Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="RowSelectorColumn" parents="AbstractDataColumn" label="RowSelectorColumn" type="com.bstek.dorado.view.widget.grid.RowSelectorColumn" scope="public" icon="/com/bstek/dorado/view/widget/grid/RowSelectorColumn.png"><Props>
-<Prop name="align" enumValues="left,center,right"/>
-<Prop name="caption"/>
-<Prop name="filterBarRenderer"/>
-<Prop name="footerRenderer"/>
-<Prop name="headerAlign" defaultValue="center" enumValues="left,center,right"/>
-<Prop name="headerRenderer"/>
-<Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="name"/>
-<Prop name="renderer"/>
-<Prop name="resizeable" defaultValue="true" type="boolean"/>
-<Prop name="supportsOptionMenu" defaultValue="true" type="boolean"/>
-<Prop name="tags"/>
-<Prop name="userData" editor="any" type="java.lang.Object"/>
-<Prop name="visible" defaultValue="true" type="boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="ColumnGroup" parents="Column" label="ColumnGroup" type="com.bstek.dorado.view.widget.grid.ColumnGroup" scope="public" icon="/com/bstek/dorado/view/widget/grid/ColumnGroup.png"><Props>
-<Prop name="align" enumValues="left,center,right"/>
-<Prop name="caption"/>
-<Prop name="headerAlign" defaultValue="center" enumValues="left,center,right"/>
-<Prop name="headerRenderer"/>
-<Prop name="ignored" type="boolean"/><Prop name="metaData" type="java.util.Map" compositeType="Open"></Prop>
-<Prop name="name"/>
-<Prop name="supportsOptionMenu" defaultValue="true" type="boolean"/>
-<Prop name="tags"/>
-<Prop name="userData" editor="any" type="java.lang.Object"/>
-<Prop name="visible" defaultValue="true" type="boolean"/></Props><Children><Child rule="Column" name="Columns" aggregated="true"></Child></Children></Rule><Rule name="AbstractList" parents="Control_1" abstract="true" type="com.bstek.dorado.view.widget.list.AbstractList" scope="protected"><PrimitiveProps>
+<Prop name="width"/></Props></Rule><Rule name="AbstractList" parents="Control_1" abstract="true" type="com.bstek.dorado.view.widget.list.AbstractList" scope="protected"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="allowNoCurrent" type="boolean"/>
 <Prop name="className"/>
@@ -4655,7 +4655,7 @@
 <ClientEvent name="beforeExpand" parameters="self,arg"/>
 <ClientEvent name="onNodeDetached" parameters="self,arg"/>
 <ClientEvent name="beforeNodeCheckedChange" parameters="self,arg"/>
-<ClientEvent name="onNodeAttached" parameters="self,arg"/></ClientEvents><Children><Child name="Columns" fixed="true"><Rule name="Wrapper.Columns" label="Columns" nodeName="Columns" scope="public" icon="/com/bstek/dorado/view/widget/treegrid/Columns.png"><Children><Child rule="Column" name="Columns" aggregated="true"></Child></Children></Rule></Child></Children></Rule><Rule name="Spacer" parents="Control_1" label="ToolBarSpacer" nodeName="TouchToolBarSpacer" type="com.bstek.dorado.touch.widget.toolbar.Spacer" scope="protected" category="ToolBar" icon="/com/bstek/dorado/touch/widget/toolbar/Spacer.png" clientTypes="touch"><PrimitiveProps>
+<ClientEvent name="onNodeAttached" parameters="self,arg"/></ClientEvents><Children><Child name="Columns" fixed="true"><Rule name="Wrapper.Columns" label="Columns" nodeName="Columns" scope="public" icon="/com/bstek/dorado/view/widget/treegrid/Columns.png"><Children><Child rule="Column" name="Columns" aggregated="true"></Child></Children></Rule></Child></Children></Rule><Rule name="Separator_2" parents="Control_1" label="ToolBarSeparator" nodeName="TouchToolBarSeparator" type="com.bstek.dorado.touch.widget.toolbar.Separator" scope="protected" category="ToolBar" icon="/com/bstek/dorado/touch/widget/toolbar/Separator.png" clientTypes="touch"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="className"/>
 <Prop name="dragTags"/>
@@ -4674,7 +4674,7 @@
 <Prop name="ui" defaultValue="default"/>
 <Prop name="userData" editor="any" type="java.lang.Object"/>
 <Prop name="visible" type="java.lang.Boolean"/>
-<Prop name="width"/></Props></Rule><Rule name="Separator_2" parents="Control_1" label="ToolBarSeparator" nodeName="TouchToolBarSeparator" type="com.bstek.dorado.touch.widget.toolbar.Separator" scope="protected" category="ToolBar" icon="/com/bstek/dorado/touch/widget/toolbar/Separator.png" clientTypes="touch"><PrimitiveProps>
+<Prop name="width"/></Props></Rule><Rule name="Spacer" parents="Control_1" label="ToolBarSpacer" nodeName="TouchToolBarSpacer" type="com.bstek.dorado.touch.widget.toolbar.Spacer" scope="protected" category="ToolBar" icon="/com/bstek/dorado/touch/widget/toolbar/Spacer.png" clientTypes="touch"><PrimitiveProps>
 <Prop name="id" highlight="1"/></PrimitiveProps><Props>
 <Prop name="className"/>
 <Prop name="dragTags"/>
@@ -4873,6 +4873,12 @@
 <Prop name="icon32"/>
 <Prop name="icon48"/>
 <Prop name="icon64"/>
+<Prop name="id"/></Props></Rule><Rule name="AbstractControlApp" parents="App" abstract="true" type="com.bstek.dorado.desktop.AbstractControlApp" scope="public"><Props>
+<Prop name="caption"/>
+<Prop name="icon16"/>
+<Prop name="icon32"/>
+<Prop name="icon48"/>
+<Prop name="icon64"/>
 <Prop name="id"/></Props></Rule><Rule name="IFrameApp" parents="DialogApp" label="IFrameApp" type="com.bstek.dorado.desktop.IFrameApp" scope="public" icon="/com/bstek/dorado/desktop/IFrameApp.png"><Props>
 <Prop name="caption"/>
 <Prop name="center" defaultValue="true" type="boolean"/>
@@ -4895,13 +4901,7 @@
 <Prop name="showTaskButton" defaultValue="true" type="boolean"/>
 <Prop name="taskButtonTip"/>
 <Prop name="top" type="int"/>
-<Prop name="width" type="int"/></Props></Rule><Rule name="AbstractControlApp" parents="App" abstract="true" type="com.bstek.dorado.desktop.AbstractControlApp" scope="public"><Props>
-<Prop name="caption"/>
-<Prop name="icon16"/>
-<Prop name="icon32"/>
-<Prop name="icon48"/>
-<Prop name="icon64"/>
-<Prop name="id"/></Props></Rule><Rule name="DialogApp" parents="AbstractControlApp" label="DialogApp" type="com.bstek.dorado.desktop.DialogApp" scope="public" icon="/com/bstek/dorado/desktop/DialogApp.png"><Props>
+<Prop name="width" type="int"/></Props></Rule><Rule name="DialogApp" parents="AbstractControlApp" label="DialogApp" type="com.bstek.dorado.desktop.DialogApp" scope="public" icon="/com/bstek/dorado/desktop/DialogApp.png"><Props>
 <Prop name="caption"/>
 <Prop name="icon16"/>
 <Prop name="icon32"/>
@@ -5082,7 +5082,94 @@
 <Prop name="values"/></Props><ClientEvents>
 <ClientEvent name="onClick" parameters="self,arg"/>
 <ClientEvent name="onGetBindingDataType" parameters="self,arg"/>
-<ClientEvent name="onGetBindingData" parameters="self,arg"/></ClientEvents></Rule><Rule name="Line" parents="Element" label="Line" type="com.bstek.dorado.ofc.element.Line" scope="public" icon="/com/bstek/dorado/ofc/element/Line.png"><Props>
+<ClientEvent name="onGetBindingData" parameters="self,arg"/></ClientEvents></Rule><Rule name="Arrow" parents="Element" label="Arrow" type="com.bstek.dorado.ofc.element.Arrow" scope="public" icon="/com/bstek/dorado/ofc/element/Arrow.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="barbLength" type="java.lang.Double"/>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/><Prop name="end" type="com.bstek.dorado.ofc.Point" compositeType="Fixed">
+<Prop name="x" type="java.lang.Double"/>
+<Prop name="y" type="java.lang.Double"/></Prop>
+<Prop name="fontSize" type="int"/><Prop name="start" type="com.bstek.dorado.ofc.Point" compositeType="Fixed">
+<Prop name="x" type="java.lang.Double"/>
+<Prop name="y" type="java.lang.Double"/></Prop>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="values"/></Props></Rule><Rule name="StackedColumn" parents="Element" label="StackedColumn" type="com.bstek.dorado.ofc.element.StackedColumn" scope="public" icon="/com/bstek/dorado/ofc/element/StackedColumn.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.StackBindingConfig" compositeType="Fixed">
+<Prop name="colorProperty"/>
+<Prop name="valueProperty"/>
+<Prop name="valuesProperty"/></Prop>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/>
+<Prop name="fontSize" type="int"/>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="values"/></Props><Children><Child rule="Key" name="Keys" aggregated="true"></Child></Children></Rule><Rule name="Key" label="Key" type="com.bstek.dorado.ofc.Key" scope="public"><Props>
+<Prop name="color"/>
+<Prop name="fontSize" type="int"/>
+<Prop name="text"/></Props></Rule><Rule name="FilledColumn" parents="Column_1" label="FilledColumn" type="com.bstek.dorado.ofc.element.FilledColumn" scope="public" icon="/com/bstek/dorado/ofc/element/FilledColumn.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
+<Prop name="bottomProperty"/>
+<Prop name="colorProperty"/>
+<Prop name="toolTipProperty"/>
+<Prop name="topProperty"/>
+<Prop name="valueProperty"/></Prop>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/>
+<Prop name="fontSize" type="int"/>
+<Prop name="outlineColor"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
+<Prop name="cascade" type="java.lang.Double"/>
+<Prop name="delay" type="java.lang.Double"/>
+<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
+<Prop name="values"/></Props></Rule><Rule name="Column_1" parents="Element" label="Column" type="com.bstek.dorado.ofc.element.Column" scope="public" icon="/com/bstek/dorado/ofc/element/Column.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
+<Prop name="bottomProperty"/>
+<Prop name="colorProperty"/>
+<Prop name="toolTipProperty"/>
+<Prop name="topProperty"/>
+<Prop name="valueProperty"/></Prop>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/>
+<Prop name="fontSize" type="int"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
+<Prop name="cascade" type="java.lang.Double"/>
+<Prop name="delay" type="java.lang.Double"/>
+<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
+<Prop name="values"/></Props></Rule><Rule name="CandleChart" parents="Column_1" label="CandleChart" type="com.bstek.dorado.ofc.element.CandleChart" scope="public" icon="/com/bstek/dorado/ofc/element/CandleChart.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
+<Prop name="bottomProperty"/>
+<Prop name="colorProperty"/>
+<Prop name="toolTipProperty"/>
+<Prop name="topProperty"/>
+<Prop name="valueProperty"/></Prop>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/>
+<Prop name="fontSize" type="int"/>
+<Prop name="negativeColor"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
+<Prop name="cascade" type="java.lang.Double"/>
+<Prop name="delay" type="java.lang.Double"/>
+<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
+<Prop name="values"/></Props></Rule><Rule name="Line" parents="Element" label="Line" type="com.bstek.dorado.ofc.element.Line" scope="public" icon="/com/bstek/dorado/ofc/element/Line.png"><Props>
 <Prop name="alpha" type="java.lang.Double"/>
 <Prop name="axis" enumValues="left,right"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.LineDotBindingConfig" compositeType="Fixed">
 <Prop name="colorProperty"/>
@@ -5123,116 +5210,57 @@
 <Prop name="text"/>
 <Prop name="toolTip"/>
 <Prop name="values"/>
-<Prop name="width" type="int"/></Props></Rule><Rule name="SketchColumn" parents="FilledColumn" label="SketchColumn" type="com.bstek.dorado.ofc.element.SketchColumn" scope="public" icon="/com/bstek/dorado/ofc/element/SketchColumn.png"><Props>
+<Prop name="width" type="int"/></Props></Rule><Rule name="Scatter" parents="Element" label="Scatter" type="com.bstek.dorado.ofc.element.Scatter" scope="public" icon="/com/bstek/dorado/ofc/element/Scatter.png"><Props>
 <Prop name="alpha" type="java.lang.Double"/>
-<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
-<Prop name="bottomProperty"/>
+<Prop name="axis" enumValues="left,right"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.LineDotBindingConfig" compositeType="Fixed">
 <Prop name="colorProperty"/>
+<Prop name="haloSizeProperty"/>
+<Prop name="hollowProperty"/>
+<Prop name="rotationProperty"/>
+<Prop name="sidesProperty"/>
+<Prop name="sizeProperty"/>
 <Prop name="toolTipProperty"/>
-<Prop name="topProperty"/>
-<Prop name="valueProperty"/></Prop>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="fontSize" type="int"/>
-<Prop name="offset" type="java.lang.Integer"/>
-<Prop name="outlineColor"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
-<Prop name="cascade" type="java.lang.Double"/>
-<Prop name="delay" type="java.lang.Double"/>
-<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
-<Prop name="values"/></Props></Rule><Rule name="Column_1" parents="Element" label="Column" type="com.bstek.dorado.ofc.element.Column" scope="public" icon="/com/bstek/dorado/ofc/element/Column.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
-<Prop name="bottomProperty"/>
-<Prop name="colorProperty"/>
-<Prop name="toolTipProperty"/>
-<Prop name="topProperty"/>
-<Prop name="valueProperty"/></Prop>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="fontSize" type="int"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
-<Prop name="cascade" type="java.lang.Double"/>
-<Prop name="delay" type="java.lang.Double"/>
-<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
-<Prop name="values"/></Props></Rule><Rule name="FilledColumn" parents="Column_1" label="FilledColumn" type="com.bstek.dorado.ofc.element.FilledColumn" scope="public" icon="/com/bstek/dorado/ofc/element/FilledColumn.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
-<Prop name="bottomProperty"/>
-<Prop name="colorProperty"/>
-<Prop name="toolTipProperty"/>
-<Prop name="topProperty"/>
-<Prop name="valueProperty"/></Prop>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="fontSize" type="int"/>
-<Prop name="outlineColor"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
-<Prop name="cascade" type="java.lang.Double"/>
-<Prop name="delay" type="java.lang.Double"/>
-<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
-<Prop name="values"/></Props></Rule><Rule name="Arrow" parents="Element" label="Arrow" type="com.bstek.dorado.ofc.element.Arrow" scope="public" icon="/com/bstek/dorado/ofc/element/Arrow.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="barbLength" type="java.lang.Double"/>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/><Prop name="end" type="com.bstek.dorado.ofc.Point" compositeType="Fixed">
-<Prop name="x" type="java.lang.Double"/>
-<Prop name="y" type="java.lang.Double"/></Prop>
-<Prop name="fontSize" type="int"/><Prop name="start" type="com.bstek.dorado.ofc.Point" compositeType="Fixed">
-<Prop name="x" type="java.lang.Double"/>
-<Prop name="y" type="java.lang.Double"/></Prop>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="values"/></Props></Rule><Rule name="Tags" parents="Element" label="Tags" type="com.bstek.dorado.ofc.element.Tags" scope="public" icon="/com/bstek/dorado/ofc/element/Tags.png"><Props>
-<Prop name="alignX" enumValues="center,left,right"/>
-<Prop name="alignY" enumValues="above,below,center"/>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="axis" enumValues="left,right"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.TagBindingConfig" compositeType="Fixed">
-<Prop name="alignXProperty"/>
-<Prop name="alignYProperty"/>
-<Prop name="alphaProperty"/>
-<Prop name="axisProperty"/>
-<Prop name="backgroundColorProperty"/>
-<Prop name="boldProperty"/>
-<Prop name="borderProperty"/>
-<Prop name="colorProperty"/>
-<Prop name="fontProperty"/>
-<Prop name="fontSizeProperty"/>
-<Prop name="padXProperty"/>
-<Prop name="padYProperty"/>
-<Prop name="rotateProperty"/>
-<Prop name="textProperty"/>
-<Prop name="underlineProperty"/>
+<Prop name="typeProperty"/>
+<Prop name="valueProperty"/>
 <Prop name="xProperty"/>
 <Prop name="yProperty"/></Prop>
-<Prop name="bold" type="boolean"/>
-<Prop name="border" type="boolean"/>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/><Prop name="dotStyle" type="com.bstek.dorado.ofc.element.LineDotStyle" compositeType="Fixed">
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="axis" enumValues="left,right"/>
+<Prop name="backgroundAlpha" type="java.lang.Double"/>
+<Prop name="backgroundColor"/>
+<Prop name="color"/>
+<Prop name="dotSize" type="java.lang.Integer"/>
+<Prop name="haloSize" type="java.lang.Integer"/>
+<Prop name="hollow" type="boolean"/>
+<Prop name="rotation" type="java.lang.Integer"/>
+<Prop name="sides" type="java.lang.Integer"/>
+<Prop name="toolTip"/>
+<Prop name="type" enumValues="Anchor,Bow,Dot,StarDot,HollowDot,SolidDot"/>
+<Prop name="width" type="java.lang.Double"/></Prop>
+<Prop name="fontSize" type="int"/>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="type" enumValues="line,point"/>
+<Prop name="values"/>
+<Prop name="width" type="java.lang.Integer"/></Props></Rule><Rule name="Bar" parents="Element" label="Bar" type="com.bstek.dorado.ofc.element.Bar" scope="public" icon="/com/bstek/dorado/ofc/element/Bar.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.BarBindingConfig" compositeType="Fixed">
+<Prop name="colorProperty"/>
+<Prop name="leftProperty"/>
+<Prop name="rightProperty"/>
+<Prop name="toolTipProperty"/>
+<Prop name="valueProperty"/></Prop>
 <Prop name="color"/>
 <Prop name="colors" type="[Ljava.lang.String;"/>
 <Prop name="dataPath"/>
 <Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="font"/>
 <Prop name="fontSize" type="int"/>
-<Prop name="padX" type="java.lang.Double"/>
-<Prop name="padY" type="java.lang.Double"/>
-<Prop name="rotate" type="java.lang.Double"/>
 <Prop name="text"/>
 <Prop name="toolTip"/>
-<Prop name="underline" type="boolean"/>
 <Prop name="values"/></Props></Rule><Rule name="Pie" parents="Element" label="Pie" type="com.bstek.dorado.ofc.element.Pie" scope="public" icon="/com/bstek/dorado/ofc/element/Pie.png"><Props>
 <Prop name="alpha" type="java.lang.Double"/>
 <Prop name="animation" type="boolean"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.PieBindingConfig" compositeType="Fixed">
@@ -5254,6 +5282,27 @@
 <Prop name="startAngle" type="java.lang.Double"/>
 <Prop name="text"/>
 <Prop name="toolTip"/>
+<Prop name="values"/></Props></Rule><Rule name="SketchColumn" parents="FilledColumn" label="SketchColumn" type="com.bstek.dorado.ofc.element.SketchColumn" scope="public" icon="/com/bstek/dorado/ofc/element/SketchColumn.png"><Props>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
+<Prop name="bottomProperty"/>
+<Prop name="colorProperty"/>
+<Prop name="toolTipProperty"/>
+<Prop name="topProperty"/>
+<Prop name="valueProperty"/></Prop>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/>
+<Prop name="fontSize" type="int"/>
+<Prop name="offset" type="java.lang.Integer"/>
+<Prop name="outlineColor"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
+<Prop name="cascade" type="java.lang.Double"/>
+<Prop name="delay" type="java.lang.Double"/>
+<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
 <Prop name="values"/></Props></Rule><Rule name="Area" parents="Line" label="Area" type="com.bstek.dorado.ofc.element.Area" scope="public" icon="/com/bstek/dorado/ofc/element/Area.png"><Props>
 <Prop name="alpha" type="java.lang.Double"/>
 <Prop name="axis" enumValues="left,right"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.LineDotBindingConfig" compositeType="Fixed">
@@ -5298,92 +5347,7 @@
 <Prop name="text"/>
 <Prop name="toolTip"/>
 <Prop name="values"/>
-<Prop name="width" type="int"/></Props></Rule><Rule name="Scatter" parents="Element" label="Scatter" type="com.bstek.dorado.ofc.element.Scatter" scope="public" icon="/com/bstek/dorado/ofc/element/Scatter.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="axis" enumValues="left,right"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.LineDotBindingConfig" compositeType="Fixed">
-<Prop name="colorProperty"/>
-<Prop name="haloSizeProperty"/>
-<Prop name="hollowProperty"/>
-<Prop name="rotationProperty"/>
-<Prop name="sidesProperty"/>
-<Prop name="sizeProperty"/>
-<Prop name="toolTipProperty"/>
-<Prop name="typeProperty"/>
-<Prop name="valueProperty"/>
-<Prop name="xProperty"/>
-<Prop name="yProperty"/></Prop>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/><Prop name="dotStyle" type="com.bstek.dorado.ofc.element.LineDotStyle" compositeType="Fixed">
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="axis" enumValues="left,right"/>
-<Prop name="backgroundAlpha" type="java.lang.Double"/>
-<Prop name="backgroundColor"/>
-<Prop name="color"/>
-<Prop name="dotSize" type="java.lang.Integer"/>
-<Prop name="haloSize" type="java.lang.Integer"/>
-<Prop name="hollow" type="boolean"/>
-<Prop name="rotation" type="java.lang.Integer"/>
-<Prop name="sides" type="java.lang.Integer"/>
-<Prop name="toolTip"/>
-<Prop name="type" enumValues="Anchor,Bow,Dot,StarDot,HollowDot,SolidDot"/>
-<Prop name="width" type="java.lang.Double"/></Prop>
-<Prop name="fontSize" type="int"/>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="type" enumValues="line,point"/>
-<Prop name="values"/>
-<Prop name="width" type="java.lang.Integer"/></Props></Rule><Rule name="CandleChart" parents="Column_1" label="CandleChart" type="com.bstek.dorado.ofc.element.CandleChart" scope="public" icon="/com/bstek/dorado/ofc/element/CandleChart.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.ColumnBindingConfig" compositeType="Fixed">
-<Prop name="bottomProperty"/>
-<Prop name="colorProperty"/>
-<Prop name="toolTipProperty"/>
-<Prop name="topProperty"/>
-<Prop name="valueProperty"/></Prop>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="fontSize" type="int"/>
-<Prop name="negativeColor"/><Prop name="showAnimation" type="com.bstek.dorado.ofc.element.ShowAnimation" compositeType="Fixed">
-<Prop name="cascade" type="java.lang.Double"/>
-<Prop name="delay" type="java.lang.Double"/>
-<Prop name="type" enumValues="popUp,explode,midSlide,drop,fadeIn,shrinkIn"/></Prop>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="type" enumValues="Column,Glass,Cylinder,CylinderOutline,Dome,Round,RoundGlass,Round3D,Column3D,Plastic,PlasticFlat"/>
-<Prop name="values"/></Props></Rule><Rule name="StackedColumn" parents="Element" label="StackedColumn" type="com.bstek.dorado.ofc.element.StackedColumn" scope="public" icon="/com/bstek/dorado/ofc/element/StackedColumn.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.StackBindingConfig" compositeType="Fixed">
-<Prop name="colorProperty"/>
-<Prop name="valueProperty"/>
-<Prop name="valuesProperty"/></Prop>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="fontSize" type="int"/>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="values"/></Props><Children><Child rule="Key" name="Keys" aggregated="true"></Child></Children></Rule><Rule name="Key" label="Key" type="com.bstek.dorado.ofc.Key" scope="public"><Props>
-<Prop name="color"/>
-<Prop name="fontSize" type="int"/>
-<Prop name="text"/></Props></Rule><Rule name="Bar" parents="Element" label="Bar" type="com.bstek.dorado.ofc.element.Bar" scope="public" icon="/com/bstek/dorado/ofc/element/Bar.png"><Props>
-<Prop name="alpha" type="java.lang.Double"/>
-<Prop name="barWidth" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.BarBindingConfig" compositeType="Fixed">
-<Prop name="colorProperty"/>
-<Prop name="leftProperty"/>
-<Prop name="rightProperty"/>
-<Prop name="toolTipProperty"/>
-<Prop name="valueProperty"/></Prop>
-<Prop name="color"/>
-<Prop name="colors" type="[Ljava.lang.String;"/>
-<Prop name="dataPath"/>
-<Prop name="dataSet" reference="DataSet:id"/>
-<Prop name="fontSize" type="int"/>
-<Prop name="text"/>
-<Prop name="toolTip"/>
-<Prop name="values"/></Props></Rule><Rule name="Shape" parents="Element" label="Shape" type="com.bstek.dorado.ofc.element.Shape" scope="public" icon="/com/bstek/dorado/ofc/element/Shape.png"><Props>
+<Prop name="width" type="int"/></Props></Rule><Rule name="Shape" parents="Element" label="Shape" type="com.bstek.dorado.ofc.element.Shape" scope="public" icon="/com/bstek/dorado/ofc/element/Shape.png"><Props>
 <Prop name="alpha" type="java.lang.Double"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.PointBindingConfig" compositeType="Fixed">
 <Prop name="xProperty"/>
 <Prop name="yProperty"/></Prop>
@@ -5393,6 +5357,42 @@
 <Prop name="fontSize" type="int"/>
 <Prop name="text"/>
 <Prop name="toolTip"/>
+<Prop name="values"/></Props></Rule><Rule name="Tags" parents="Element" label="Tags" type="com.bstek.dorado.ofc.element.Tags" scope="public" icon="/com/bstek/dorado/ofc/element/Tags.png"><Props>
+<Prop name="alignX" enumValues="center,left,right"/>
+<Prop name="alignY" enumValues="above,below,center"/>
+<Prop name="alpha" type="java.lang.Double"/>
+<Prop name="axis" enumValues="left,right"/><Prop name="bindingConfig" type="com.bstek.dorado.ofc.binding.TagBindingConfig" compositeType="Fixed">
+<Prop name="alignXProperty"/>
+<Prop name="alignYProperty"/>
+<Prop name="alphaProperty"/>
+<Prop name="axisProperty"/>
+<Prop name="backgroundColorProperty"/>
+<Prop name="boldProperty"/>
+<Prop name="borderProperty"/>
+<Prop name="colorProperty"/>
+<Prop name="fontProperty"/>
+<Prop name="fontSizeProperty"/>
+<Prop name="padXProperty"/>
+<Prop name="padYProperty"/>
+<Prop name="rotateProperty"/>
+<Prop name="textProperty"/>
+<Prop name="underlineProperty"/>
+<Prop name="xProperty"/>
+<Prop name="yProperty"/></Prop>
+<Prop name="bold" type="boolean"/>
+<Prop name="border" type="boolean"/>
+<Prop name="color"/>
+<Prop name="colors" type="[Ljava.lang.String;"/>
+<Prop name="dataPath"/>
+<Prop name="dataSet" reference="DataSet:id"/>
+<Prop name="font"/>
+<Prop name="fontSize" type="int"/>
+<Prop name="padX" type="java.lang.Double"/>
+<Prop name="padY" type="java.lang.Double"/>
+<Prop name="rotate" type="java.lang.Double"/>
+<Prop name="text"/>
+<Prop name="toolTip"/>
+<Prop name="underline" type="boolean"/>
 <Prop name="values"/></Props></Rule><Rule name="RadarAxis" parents="AbstractAxis" label="RadarAxis" type="com.bstek.dorado.ofc.axis.RadarAxis" scope="public" icon="/com/bstek/dorado/ofc/axis/RadarAxis.png"><Props>
 <Prop name="color"/>
 <Prop name="gridColor"/>
