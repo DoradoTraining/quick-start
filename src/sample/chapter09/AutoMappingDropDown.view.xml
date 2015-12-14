@@ -10,15 +10,15 @@
         <Property name="mapValues">
           <Collection>
             <Entity>
-              <Property name="1">男</Property>
+              <Property name="key">1</Property>
+              <Property name="value">男</Property>
             </Entity>
             <Entity>
-              <Property name="0">女</Property>
+              <Property name="key">0</Property>
+              <Property name="value">女</Property>
             </Entity>
           </Collection>
         </Property>
-        <Property name="keyProperty">name</Property>
-        <Property name="valueProperty">value</Property>
       </Property>
     </TextEditor>
   </View>
