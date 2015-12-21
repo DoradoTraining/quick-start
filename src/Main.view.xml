@@ -5,6 +5,7 @@
   <Model/>
   <View>
     <Property name="title">Dorado7.0 快速入门</Property>
+    <Property name="packages">font-awesome</Property>
     <ToolBar>
       <ToolBarLabel>
         <Property name="style">

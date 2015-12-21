@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <DataSet id="dsProducts">
+      <Property name="dataType">[Product]</Property>
+      <Property name="dataProvider">simpleCRUD#query1</Property>
+      <Property name="pageSize">20</Property>
+    </DataSet>
+    <TextEditor id="textEditor1">
+      <Property name="trigger">dsDropdown1</Property>
+      <Property name="width">300</Property>
+    </TextEditor>
+    <TextEditor>
+      <Property name="property">proName</Property>
+    </TextEditor>
+    <TextEditor>
+      <Property name="property">uPrice</Property>
+    </TextEditor>
+    <TextEditor>
+      <Property name="property">uStock</Property>
+    </TextEditor>
+    <AutoForm id="afproduct">
+      <Property name="labelAlign">right</Property>
+      <Property name="labelSeparator">：</Property>
+      <Property name="dataSet">dsProducts</Property>
+      <AutoFormElement>
+        <Property name="name">productName</Property>
+        <Property name="property">productName</Property>
+        <Property name="trigger">dsDropdown1</Property>
+        <Editor/>
+      </AutoFormElement>
+      <AutoFormElement>
+        <Property name="name">unitPrice</Property>
+        <Property name="property">unitPrice</Property>
+        <Editor/>
+      </AutoFormElement>
+      <AutoFormElement>
+        <Property name="name">unitsInStock</Property>
+        <Property name="property">unitsInStock</Property>
+        <Editor/>
+      </AutoFormElement>
+    </AutoForm>
+    <DataSetDropDown id="dsDropdown1">
+      <ClientEvent name="onValueSelect">//alert(arg.selectedValue)&#xD;
+&#xD;
+var dsProducts = view.get(&quot;#dsProducts&quot;);&#xD;
+var currentEntity = dsProducts.get(&quot;data:#&quot;)&#xD;
+&#xD;
+//获取当前数据&#xD;
+console.log(JSON.stringify(currentEntity));&#xD;
+&#xD;
+//产品id&#xD;
+console.log(currentEntity.get(&quot;id&quot;));&#xD;
+&#xD;
+//entity只能用get去获取数据&#xD;
+//console.log(currentEntity[&quot;id&quot;]);&#xD;
+&#xD;
+//产品名称&#xD;
+console.log(currentEntity.get(&quot;productName&quot;));&#xD;
+&#xD;
+var str = JSON.stringify(currentEntity);&#xD;
+&#xD;
+var json = JSON.parse(str);&#xD;
+&#xD;
+console.log(&quot;currentEntity&quot;+currentEntity);&#xD;
+console.log(json);&#xD;
+&#xD;
+&#xD;
+//JSON 数据获取值得两种方式&#xD;
+console.log(json.id);&#xD;
+console.log(json[&quot;id&quot;]);&#xD;
+&#xD;
+console.log(json.productName);&#xD;
+console.log(json['productName']);&#xD;
+&#xD;
+console.log(&quot;----------------------&quot;);&#xD;
+console.log(JSON.parse(JSON.stringify(currentEntity)));&#xD;
+&#xD;
+&#xD;
+&#xD;
+/**&#xD;
+ * ！！！切记&#xD;
+ * 使用assignMap的时候  dataSetDropDown 和 autoform 需要绑定同一个dataSet&#xD;
+ * &#xD;
+ */</ClientEvent>
+      <Property name="dataSet">dsProducts</Property>
+      <Property name="width">300</Property>
+      <Property name="assignmentMap">productName,unitPrice,unitsInStock</Property>
+      <Property name="autoOpen">true</Property>
+      <Property name="displayProperty">productName</Property>
+      <Property name="property">productName</Property>
+      <Property name="dynaFilter">false</Property>
+      <Property name="filterOnOpen">false</Property>
+      <Property name="filterOnTyping">true</Property>
+    </DataSetDropDown>
+  </View>
+</ViewConfig>

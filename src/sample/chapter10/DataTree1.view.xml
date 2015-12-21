@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model>
+    <DataType name="Category" parent="Categoty">
+      <PropertyDef>
+        <Property name="name">products</Property>
+        <Property name="dataType">[Product]</Property>
+      </PropertyDef>
+    </DataType>
+    <DataType name="Product" parent="global:Product"/>
+  </Model>
+  <View>
+    <DataSet id="dsProducts">
+      <Property name="dataType">[Category]</Property>
+      <Property name="dataProvider">dataTree#getAll</Property>
+    </DataSet>
+    <DataTree>
+      <Property name="dataSet">dsProducts</Property>
+      <BindingConfigs>
+        <BindingConfig>
+          <Property name="labelProperty">categoryName</Property>
+          <Property name="name">categorys</Property>
+          <BindingConfig>
+            <Property name="labelProperty">productName</Property>
+            <Property name="childrenProperty">products</Property>
+            <Property name="name">products</Property>
+          </BindingConfig>
+        </BindingConfig>
+      </BindingConfigs>
+    </DataTree>
+  </View>
+</ViewConfig>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model>
+    <DataType name="ExampleCategory" parent="global:ExampleCategory"/>
+  </Model>
+  <View>
+    <DataSet id="dsCategory">
+      <Property name="dataType">[ExampleCategory]</Property>
+      <Property name="dataProvider">recursiveTree#getCategories</Property>
+    </DataSet>
+    <DataTree id="dtree">
+      <Property name="dataSet">dsCategory</Property>
+      <BindingConfigs>
+        <BindingConfig>
+          <Property name="labelProperty">label</Property>
+          <Property name="name">catagories</Property>
+          <Property name="recursive">true</Property>
+          <Property name="childrenProperty">categories</Property>
+        </BindingConfig>
+      </BindingConfigs>
+    </DataTree>
+  </View>
+</ViewConfig>

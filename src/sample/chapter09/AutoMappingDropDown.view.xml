@@ -20,6 +20,103 @@
           </Collection>
         </Property>
       </Property>
+      <Property name="trigger">dropdown1</Property>
+    </TextEditor>
+    <TextEditor id="textEditor2">
+      <ClientEvent name="onReady">self.set(&quot;value&quot;, 0);</ClientEvent>
+      <Property name="mapping">
+        <Property name="mapValues">
+          <Collection>
+            <Entity>
+              <Property name="key1">1</Property>
+              <Property name="value1">男</Property>
+            </Entity>
+            <Entity>
+              <Property name="key1">0</Property>
+              <Property name="value1">女</Property>
+            </Entity>
+          </Collection>
+        </Property>
+        <Property name="keyProperty">key1</Property>
+        <Property name="valueProperty">value1</Property>
+      </Property>
+      <Property name="trigger">dropDown2</Property>
+      <Property name="editable">false</Property>
+    </TextEditor>
+    <TextEditor id="textEditor3">
+      <ClientEvent name="onReady">self.set(&quot;mapping&quot;,[&#xD;
+	{&#xD;
+		key:1,&#xD;
+		value:&quot;男&quot;&#xD;
+	},&#xD;
+	{&#xD;
+		key:0,&#xD;
+		value:&quot;女&quot;&#xD;
+	}&#xD;
+]);&#xD;
+self.set(&quot;value&quot;,1);&#xD;
+</ClientEvent>
+      <Property name="trigger">dropdown1</Property>
+    </TextEditor>
+    <TextEditor id="textEditor4">
+      <ClientEvent name="onReady">self.set(&quot;value&quot;,&quot;Mr.&quot;);&#xD;
+</ClientEvent>
+      <Property name="mapping">
+        <Property name="mapValues">${dorado.getDataProvider(&quot;getMapService#getMapping&quot;).getResult()}</Property>
+        <Property name="keyProperty">key</Property>
+        <Property name="valueProperty">value</Property>
+      </Property>
+      <Property name="trigger">dropdown1</Property>
+    </TextEditor>
+    <AutoMappingDropDown id="dropdown1">
+      <ClientEvent name="onValueSelect">//被选择的值&#xD;
+var value = arg.selectedValue;&#xD;
+alert(value);&#xD;
+</ClientEvent>
+    </AutoMappingDropDown>
+    <AutoMappingDropDown id="dropDown2">
+      <ClientEvent name="onValueSelect">var value = arg.selectedValue;&#xD;
+dorado.MessageBox.alert(value); </ClientEvent>
+      <Property name="useEmptyItem">true</Property>
+    </AutoMappingDropDown>
+    <TextEditor id="textEditor5">
+      <ClientEvent name="onReady">self.set(&quot;value&quot;, 1);</ClientEvent>
+      <Property name="mapping">
+        <Property name="mapValues">
+          <Collection>
+            <Entity>
+              <Property name="key">1</Property>
+              <Property name="value">男</Property>
+            </Entity>
+            <Entity>
+              <Property name="key">0</Property>
+              <Property name="value">女</Property>
+            </Entity>
+          </Collection>
+        </Property>
+      </Property>
+      <Property name="trigger">autoOpenMappingDropDown1</Property>
+    </TextEditor>
+    <TextEditor id="textEditor6">
+      <ClientEvent name="onReady">self.set(&quot;value&quot;, 0);</ClientEvent>
+      <Property name="mapping">
+        <Property name="mapValues">
+          <Collection>
+            <Entity>
+              <Property name="key1">1</Property>
+              <Property name="value1">男</Property>
+            </Entity>
+            <Entity>
+              <Property name="key1">0</Property>
+              <Property name="value1">女</Property>
+            </Entity>
+          </Collection>
+        </Property>
+        <Property name="keyProperty">key1</Property>
+        <Property name="valueProperty">value1</Property>
+      </Property>
+      <Property name="trigger">autoMappingDropDown2</Property>
+      <Property name="editable">false</Property>
     </TextEditor>
   </View>
 </ViewConfig>

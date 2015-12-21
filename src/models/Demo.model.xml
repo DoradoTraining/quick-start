@@ -9,10 +9,10 @@
       <Property name="dataType">Long</Property>
     </PropertyDef>
     <PropertyDef name="productName">
-      <Property/>
+      <Property></Property>
     </PropertyDef>
     <PropertyDef name="quantityPerUnit">
-      <Property/>
+      <Property></Property>
     </PropertyDef>
     <PropertyDef name="unitPrice">
       <Property name="dataType">float</Property>
@@ -28,6 +28,31 @@
     </PropertyDef>
     <PropertyDef name="discontinued">
       <Property name="dataType">boolean</Property>
+    </PropertyDef>
+  </DataType>
+  <DataType name="Categoty">
+    <Property name="matchType">com.bstek.dorado.sample.entity.Category</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">long</Property>
+    </PropertyDef>
+    <PropertyDef name="categoryName">
+      <Property/>
+    </PropertyDef>
+    <PropertyDef name="description">
+      <Property/>
+    </PropertyDef>
+  </DataType>
+  <DataType name="ExampleCategory">
+    <Property name="matchType">com.bstek.dorado.sample.entity.ExampleCategory</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">long</Property>
+    </PropertyDef>
+    <PropertyDef name="label">
+      <Property/>
+    </PropertyDef>
+    <PropertyDef>
+      <Property name="name">categories</Property>
+      <Property name="dataType">[SELF]</Property>
     </PropertyDef>
   </DataType>
 </Model>
